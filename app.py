@@ -1,10 +1,14 @@
-from flask import Flask
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Bem-vindo ao Fléshi'
+    return render_template('home.html')
+
+@app.route('/profile/<username>')
+def perfil(username):
+    return render_template("profile.html", username=username)
 
 if __name__ == '__main__':
     app.run(debug=True)
