@@ -20,6 +20,12 @@
                 <div class="mb-3">
                     {{ form.email.label(class="form-label") }}
                     {{ form.email(class="form-control") }}
+
+                    {% if form.email.errors %}
+                        {% for erro in form.email.errors %}
+                            <p class="alert alert-danger" role="alert">{{ erro }}</p>
+                        {% endfor %}
+                    {% endif %}
                 </div>
 
                 <div class="mb-3">
@@ -29,6 +35,7 @@
 
                 {{ form.submit(class="btn btn-primary mb-3") }}
             </form>
+           <a href="{{ url_for('createaccount') }}">Não tem uma conta? Cadastre-se.</a>
        </div>
     {% endblock %}
 
