@@ -66,7 +66,6 @@ Ele se destaca por seu sistema de autenticação híbrida, que gerencia usuário
    ```bash
     pip install -r requirements.txt
     ```
-    ```
 3. Crie o banco de dados:
    ```bash
     python create_database.py
@@ -77,7 +76,8 @@ Ele se destaca por seu sistema de autenticação híbrida, que gerencia usuário
     ```
 5. Entre na aba "Settings" da aplicaçã:
    ```bash
-    Configure o Allowed Callback URLs (http://localhost:5000/callback) e o Allowed Logout URLs (http://localhost:5000/logout, http://localhost:5000/)
+    Configure o Allowed Callback URLs (http://localhost:5000/callback)
+    Configure o Allowed Logout URLs (http://localhost:5000/logout,http://localhost:5000/)
     ```
 6. Configure as credenciais do Auth0 no arquivo `.env`:
    ```env
