@@ -15,22 +15,22 @@ Projeto ideal para demonstrar domínio de arquitetura MVC/MVT, segurança de aut
 - [Tecnologias](#tecnologias)
 - [Licença](#licença)
 
-##🔎 Visão Geral
+##🔎 Visão Geral {#visao-geral}
 
 Este projeto é uma aplicação de rede social simplificada desenvolvida com o micro-framework **Flask** em Python.
 
 Ele se destaca por seu sistema de autenticação híbrida, que gerencia usuários locais (com hash Bcrypt) e usuários externos (Auth0 via OpenID Connect), garantindo uma experiência de login moderna e segura. Os dados dos usuários e das fotos são persistidos em um banco de dados **SQLite** gerenciado pelo **SQLAlchemy**.
 
-##🧩 Layout do Projeto
+##🧩 Layout do Projeto {#layout-do-projeto}
 
 ![Imagem final do Projeto](https://)
 
-##▶️ Vídeo do Projeto
+##▶️ Vídeo do Projeto {#vídeo-do-projeto}
 
 - Acesse o vídeo do projeto para melhor visualização: [https://bit.ly/4q3JMVX](https://bit.ly/4q3JMVX)
 
 
-##✨ Funcionalidades
+##✨ Funcionalidades {#funcionalidades}
 
 - **Autenticação Dupla:** Login e Registro com e-mail/senha (local) ou Login Social (SSO) via Auth0.
 - **Segurança OIDC:** Uso de `prompt=login` para forçar a reautenticação no provedor externo, evitando problemas de cache de sessão (Google).
@@ -39,7 +39,7 @@ Ele se destaca por seu sistema de autenticação híbrida, que gerencia usuário
 - **Validação de Formulários:** Uso de Flask-WTF para validação de dados e verificação de unicidade (e-mail e nome de usuário).
 - **Persistência de Usuário Auth0:** Criação automática de um perfil local para usuários externos. 
 
-##📁 Estrutura de Pastas
+##📁 Estrutura de Pastas {#estrutura-de-pastas}
 
 ```
 /appfleshi
@@ -56,7 +56,7 @@ Ele se destaca por seu sistema de autenticação híbrida, que gerencia usuário
   README.md
 ```
 
-##🚀 Como Usar
+##🚀 Como Usar {#como-usar}
 
 1. Clone o repositório:  
    ```bash
@@ -95,7 +95,7 @@ Ele se destaca por seu sistema de autenticação híbrida, que gerencia usuário
     python run.py 
     ```
 
-##🛠 Tecnologias
+##🛠 Tecnologias {#tecnologias}
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
 
@@ -117,7 +117,7 @@ Ele se destaca por seu sistema de autenticação híbrida, que gerencia usuário
 
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-##📄 Licença
+##📄 Licença {#licenca}
 Este projeto está licenciado sob a MIT. 
 
 ![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
