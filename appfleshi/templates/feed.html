@@ -5,12 +5,21 @@
 {% endblock %}
 
 {% block body %}
-    {% include "navbar.html" %}
-    <h1>Feed Principal</h1>
+{% include "navbar.html" %}
 
-    {% for photo in photos %}
-        <a href="{{ url_for('profile', user_id=photo.user_id) }}">
-            <img src="{{ url_for('static', filename='posts_photos/'~ photo.file_name) }}" alt="''~ photo.file_name">
-        </a>
-    {% endfor %}
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Feed Principal</h1>
+
+    <div class="row g-3">
+        {% for photo in photos %}
+        <div class="col-6 col-md-4 col-lg-3 text-center">
+            <a href="{{ url_for('profile', user_id=photo.user_id) }}">
+                <img src="{{ url_for('static', filename='posts_photos/' + photo.file_name) }}"
+                     class="img-fluid rounded shadow-sm"
+                     alt="{{ photo.file_name }}">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}
