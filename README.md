@@ -27,7 +27,7 @@ Ele se destaca por seu sistema de autenticação híbrida, que gerencia usuário
 
 ## ▶️ Vídeo do Projeto
 
-- Acesse o vídeo do projeto para melhor visualização: [https://drive.google.com/file/d/10P7AhgsQbFG2cn5iKK3KZPS8oRwnlV_7/view?usp=sharing](https://drive.google.com/file/d/10P7AhgsQbFG2cn5iKK3KZPS8oRwnlV_7/view?usp=sharing)
+- Acesse o vídeo do projeto para melhor visualização: [https://bit.ly/4q3JMVX](https://bit.ly/4q3JMVX)
 
 
 ## ✨ Funcionalidades
